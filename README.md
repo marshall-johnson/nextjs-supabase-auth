@@ -1,29 +1,34 @@
-# Next.js + Tailwind CSS Example
+<h1 align="center"><b>Next.js</b> + <b>Supabase</b> Auth</h1>
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+<p align="center" style="display: flex; align-items: center; justify-content: center; gap: 0.75rem;">
+  <a href="https://nextjs.org">
+    <img src="/public/assests/next.svg" alt="Next.js" />
+  </a>
+  <a href="https://www.supabase.io">
+    <img src="/public/assests/supabase-js.svg" alt="Supabase" />
+  </a>
+  <a href="https://www.supabase.io">
+    <img src="/public/assests/auth-helpers-nextjs.svg" alt="Supabase" />
+  </a>
+  <a href="https://github.com/marshall-johnson/nextjs-supabase-auth/blob/main/LICENSE">
+    <img src="/public/assests/nextjs-supabase-auth.svg" alt="License" />
+  </a>
+</p>
 
-It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
+## Overview
 
-## Preview
+A sample application using Next.js, Supabase for authentication, Tailwind CSS for styling, and Formik for form handling.
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+The `main` branch is using the latest version of [Auth Helpers](https://supabase.com/docs/guides/auth/auth-helpers/nextjs) with the [Proof Key for Code Exchange](https://supabase.com/blog/supabase-auth-sso-pkce#introducing-pkce) (PKCE) flow.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## Disclaimer
 
-## Deploy your own
+This repo is meant to be an **example** only. Please feel free to fork it and make it your own.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## Author
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+[Marshall Johnson](https://github.com/marshall-johnson)
 
-## How to use
+## License
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+[MIT](https://choosealicense.com/licenses/mit/)
