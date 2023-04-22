@@ -15,6 +15,10 @@
   </a>
 </p>
 
+<p align="center">
+  <img src="/public/assests/cover.png" alt="Banner image" />
+</p>
+
 ## Overview
 
 A sample application using Next.js, Supabase for authentication, Tailwind CSS for styling, and Formik for form handling.
