@@ -1,5 +1,7 @@
-import { AuthProvider } from 'src/components/AuthProvider';
-import createClient from 'src/lib/supabase-server';
+import { createServerComponentClient } from '@supabase/auth-helpers-nextjs';
+import { cookies } from 'next/headers';
+
+import AuthProvider from 'src/components/AuthProvider';
 
 import 'src/styles/globals.css';
 
@@ -7,13 +9,11 @@ import 'src/styles/globals.css';
 export const revalidate = 0;
 
 export default async function RootLayout({ children }) {
-  const supabase = createClient();
+  const supabase = createServerComponentClient({ cookies });
 
   const {
     data: { session },
   } = await supabase.auth.getSession();
-
-  const accessToken = session?.access_token || null;
 
   return (
     <html lang="en">
@@ -23,7 +23,7 @@ export default async function RootLayout({ children }) {
             <h1 className="mb-12 text-5xl font-bold sm:text-6xl">
               Next.js with <span className="font-black text-green-400">Supabase</span>
             </h1>
-            <AuthProvider accessToken={accessToken}>{children}</AuthProvider>
+            <AuthProvider accessToken={session?.access_token}>{children}</AuthProvider>
           </main>
         </div>
       </body>
