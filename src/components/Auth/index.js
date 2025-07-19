@@ -1,11 +1,11 @@
 'use client';
 
-import { useAuth, VIEWS } from 'src/components/AuthProvider';
-
+import { useAuth } from '@/lib/auth';
 import ResetPassword from './ResetPassword';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
 import UpdatePassword from './UpdatePassword';
+import { VIEWS } from './constants';
 
 const Auth = ({ view: initialView }) => {
   let { view } = useAuth();
